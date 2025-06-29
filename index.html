@@ -4,9 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MY DABBA – Ghar Jaisa Khana</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffaf4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      text-align: center;
+    }
+    header {
+      background-color: #ff4d4d;
+      padding: 1em 0;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .tagline {
+      margin-top: -1em;
+      font-size: 1em;
+      color: #444;
+    }
+    .container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+    .button {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 1em 2em;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      width: 200px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #e03e3e;
+    }
+    footer {
+      background-color: #f4f4f4;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to MY DABBA</h1>
-  <p>Tiffin Service Marketplace – Ghar jaisa khana, ghar ke aas paas.</p>
+  <header>
+    MY DABBA
+    <div class="tagline">Ghar jaisa khana, ab aasani se!</div>
+  </header>
+
+  <div class="container">
+    <button class="button" onclick="window.location.href='vendor.html'">I am a Vendor</button>
+    <button class="button" onclick="window.location.href='customer.html'">I am a Customer</button>
+  </div>
+
+  <footer>
+    CEO and the founder of Akash Diwakar
+  </footer>
 </body>
 </html>
+
